@@ -28,8 +28,8 @@ const BookCard: React.FC<BookCardProps> = ({
           <Image
             src={imageUrl}
             alt={title}
-            width={"100"}
-            height={250}
+            width={350}
+            height={"100"}
             className="book-image"
           />
           <div className="book-info">
