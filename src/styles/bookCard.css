@@ -1,0 +1,60 @@
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.book-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: 350px;
+}
+
+.book-card .book-image {
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+  border-bottom: 2px solid #f0f4f8;
+}
+
+.book-card .book-info {
+  padding: 20px;
+}
+
+.book-card .book-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-card .book-description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.book-card .book-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-card .book-footer .like-count {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.book-card .book-footer .like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+}

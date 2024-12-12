@@ -1,0 +1,29 @@
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  margin: 25px auto;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+}
+
+.search-bar::after {
+  content: "🔍";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #007bff;
+}
