@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { fetchBookById } from "../../../services/bookService";
 import "../../../styles/bookDetailed.css";
+import Image from "next/image";
 
 const BookDetailPage = () => {
   const { id } = useParams();
@@ -32,7 +33,13 @@ const BookDetailPage = () => {
   return (
     <div className="card">
       <div className="cardImage">
-        <img src={book.mainImage} alt={book.title} />
+        <Image
+          src={book.mainImage}
+          width={250}
+          height={"100"}
+          objectFit="cover"
+          alt={book.title}
+        />
       </div>
       <div className="cardContent">
         <h2 className="cardTitle">{book.title}</h2>

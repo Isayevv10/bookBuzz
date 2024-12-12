@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link"; // Use Next.js Link
 import "../styles/bookCard.css";
+import Image from "next/image";
 
 interface BookCardProps {
   title: string;
@@ -24,7 +25,13 @@ const BookCard: React.FC<BookCardProps> = ({
         style={{ textDecoration: "none", color: "inherit" }}
       >
         <div className="book-card-inner">
-          <img src={imageUrl} alt={title} className="book-image" />
+          <Image
+            src={imageUrl}
+            alt={title}
+            width={"100"}
+            height={250}
+            className="book-image"
+          />
           <div className="book-info">
             <h3 className="book-title">{title}</h3>
             <p className="book-description">{description}</p>
