@@ -7,7 +7,7 @@ import { fetchBooks } from "../services/bookService";
 import useDebounce from "../hooks/useDebounce";
 
 const HomePage = () => {
-  const [books, setBooks] = useState<any[]>([]);
+  const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [token, setToken] = useState<string>("");
   const [searchQuery, setSearchQuery] = useState<string>("");

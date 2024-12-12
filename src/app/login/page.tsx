@@ -17,8 +17,8 @@ const LoginPage: React.FC = () => {
       const token = await login(email, password);
       localStorage.setItem("token", token);
       router.push("/");
-    } catch (err: any) {
-      setError(err.message || "Login failed");
+    } catch (err) {
+      setError("Login failed");
     }
   };
 
